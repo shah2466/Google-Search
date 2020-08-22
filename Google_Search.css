@@ -1,0 +1,140 @@
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+body, html {
+    font-size: small;
+}
+body {
+    background: #fff;
+    color: #222;
+}
+body, td, a, p, .h {
+    font-family: arial,sans-serif;
+}
+
+div {
+    display: block;
+}
+
+/* Navbar section */
+
+#navbar{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25px;
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+}
+
+
+/* Main section */
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 85px 40px;
+    grid-template-areas: 
+    ". logo1 ."
+    ". search_box ."
+    ". flexbox ."
+}
+
+#logo1{
+    padding-top: 30px;
+    grid-area: logo1;
+    justify-self: center;
+    align-self: end;
+    padding-bottom: 30px;
+}
+
+#search_box{
+    grid-area: search_box;
+    align-self: center;
+    justify-self: center;
+}
+
+#search{
+    align-self: center;
+    height: 40px;
+    width: 520px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+    margin-top: -37px; 
+    margin: 0;
+    padding-left: 10px;
+    color: rgba(0,0,0,.87);
+    text-align: center;  
+    }
+
+#search:focus{
+    box-shadow: 1px 1px 5px rgb(63, 63, 63);
+    outline: 0 !important;
+    padding-left: 10px;
+}
+#search:hover{
+    box-shadow: 1px 1px 5px grey;
+    padding-left: 10px;
+}
+
+/* Below styles for Buttons */
+#flexbox{
+    display: flexbox;
+    grid-area: flexbox;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    padding-top: 15px;
+}
+#google_search_btn{
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+#random_search_btn{
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+#google_search_btn:hover{
+    border: 1px solid rgba(0,0,0,0.226);
+}
+#random_search_btn:hover{
+    border: 1px solid rgba(0,0,0,0.226);
+}
+
+#google_search_btn:focus{
+    outline: none;
+    border:1px solid blueviolet;
+}
